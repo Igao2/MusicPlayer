@@ -119,8 +119,8 @@ namespace musica_player
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
-            player.URL = paths[listBox1.SelectedIndex];
+
+            player.URL = listBox1.SelectedItem.ToString();
             player.Ctlcontrols.play();
             button1.Enabled = false;
             button1.Visible = false;
